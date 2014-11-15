@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FEDialogLibrary</id>
+    <version>1.0.1</version>
+    <title>DialogLibrary</title>
+    <authors>svrusso1@gmail.com</authors>
+    <owners></owners>
+    <description>
+      A dialog library to emulate the MessageBox dialog.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      A dialog library to emulate the MessageBox dialog.
+    </summary>
+    <language>en-US</language>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright  2014</copyright>
+    <dependencies>
+      <group targetFramework="net40">
+      </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+</package>

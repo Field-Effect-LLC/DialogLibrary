@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogLibrary", "DialogLibrary.csproj", "{8C0E6F93-F0C3-4836-9A51-FEE540178992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuget Package", "Nuget Package\Nuget Package.csproj", "{40E38F0C-E83B-4B65-913A-AB18D8E2D013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C0E6F93-F0C3-4836-9A51-FEE540178992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0E6F93-F0C3-4836-9A51-FEE540178992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0E6F93-F0C3-4836-9A51-FEE540178992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0E6F93-F0C3-4836-9A51-FEE540178992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E38F0C-E83B-4B65-913A-AB18D8E2D013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E38F0C-E83B-4B65-913A-AB18D8E2D013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E38F0C-E83B-4B65-913A-AB18D8E2D013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E38F0C-E83B-4B65-913A-AB18D8E2D013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
