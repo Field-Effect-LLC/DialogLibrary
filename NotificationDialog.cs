@@ -14,6 +14,9 @@ namespace DialogLibrary
     {
         public bool DontShowAgain { get; set; }
 
+        [Browsable(true), DefaultValue(false)]
+        public bool EscapeCancels { get; set; }
+
         public static NotificationDialogResult Show(
             string Message,
             string Caption,
@@ -47,6 +50,7 @@ namespace DialogLibrary
         {
             InitializeComponent();
 
+            this.KeyPreview = true;
             this.Message.Text = Message;
             this.Text = Caption;
             //this.MessageTable.RowStyles[0].Height = this.Message.Height;
@@ -98,6 +102,7 @@ namespace DialogLibrary
 
             switch (Buttons)
             {
+
                 case MessageBoxButtons.AbortRetryIgnore:
                     ButtonStack.Push(ButtonFactory.CreateButton(System.Windows.Forms.DialogResult.Abort));
                     ButtonStack.Push(ButtonFactory.CreateButton(System.Windows.Forms.DialogResult.Retry));
@@ -152,7 +157,21 @@ namespace DialogLibrary
                 FocusButton.Select();
         }
 
-
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    if (this.EscapeCancels)
+                    {
+                        e.Handled = true;
+                        this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+                        this.Close();
+                    }
+                    break;
+            }
+            base.OnKeyUp(e);
+        }
     }
 
     public enum NotificationDialogResult
