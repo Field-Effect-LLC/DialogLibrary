@@ -77,7 +77,7 @@ namespace DialogLibrary
                         p.Image = SystemIcons.Question.ToBitmap();
                         break;
                 }
-                p.Size = p.Image.Size;
+                p.Size = p.Image?.Size ?? new Size(128,128);
                 //MessageTable.ColumnStyles[0].Width = p.Width;
                 p.Anchor = AnchorStyles.Left | AnchorStyles.Right;
                 //MessageTable.Controls.Add(p, 0, 0);
@@ -88,6 +88,7 @@ namespace DialogLibrary
             if (DontShowThisAgainText != null)
             {
                 CheckBox DontShowAgain = new CheckBox();
+                DontShowAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 DontShowAgain.Text = DontShowThisAgainText;
                 DontShowAgain.AutoSize = true;
                 DontShowAgain.Checked = false;
@@ -227,6 +228,7 @@ namespace DialogLibrary
                 return null;
 
             Button b = new Button();
+            b.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             b.DialogResult = ButtonType;
 
             switch (ButtonType)

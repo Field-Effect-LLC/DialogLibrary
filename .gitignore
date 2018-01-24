@@ -29,3 +29,4 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 Nuget Package/lib/net40/*
 Nuget Package/*.nupkg
+.vs

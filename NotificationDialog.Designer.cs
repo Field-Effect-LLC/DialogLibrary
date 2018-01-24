@@ -49,6 +49,7 @@ namespace DialogLibrary
             this.MainTable.Controls.Add(this.Message, 1, 0);
             this.MainTable.Controls.Add(this.ButtonPanel, 0, 1);
             this.MainTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainTable.Location = new System.Drawing.Point(0, 0);
             this.MainTable.Name = "MainTable";
             this.MainTable.Padding = new System.Windows.Forms.Padding(10);
@@ -64,6 +65,7 @@ namespace DialogLibrary
             this.Message.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Message.Location = new System.Drawing.Point(13, 10);
             this.Message.MaximumSize = new System.Drawing.Size(466, 5000);
+            this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Message.Name = "Message";
             this.Message.Size = new System.Drawing.Size(193, 65);
             this.Message.TabIndex = 1;
@@ -75,6 +77,7 @@ namespace DialogLibrary
             this.ButtonPanel.AutoSize = true;
             this.ButtonPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MainTable.SetColumnSpan(this.ButtonPanel, 2);
+            this.ButtonPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ButtonPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.ButtonPanel.Location = new System.Drawing.Point(13, 78);
@@ -85,9 +88,10 @@ namespace DialogLibrary
             // 
             // NotificationDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientSize = new System.Drawing.Size(219, 125);
             this.Controls.Add(this.MainTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
